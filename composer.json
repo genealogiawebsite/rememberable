@@ -1,24 +1,29 @@
 {
-    "name": "laravel-enso/rememberable",
+    "name": "genealogiawebsite/rememberable",
     "description": "Model caching dependency for Laravel Enso",
     "keywords": [
-        "laravel-enso",
+        "genealogiawebsite",
         "rememberable",
         "laravel-cache",
         "model-cache"
     ],
-    "homepage": "https://github.com/laravel-enso/rememberable",
+    "homepage": "https://github.com/genealogiawebsite/rememberable",
     "type": "library",
     "license": "MIT",
     "authors": [{
         "name": "Adrian Ocneanu",
         "email": "aocneanu@gmail.com",
-        "homepage": "https://laravel-enso.com",
+        "homepage": "https://genealogiawebsite.com",
         "role": "Developer"
     }],
     "require": {
+<<<<<<< HEAD
         "php": ">=7.4.0",
         "laravel/framework": "^7.0|^8.0"
+=======
+        "php": ">=7.1.0",
+        "laravel/framework": "5.6.*"
+>>>>>>> origin/adminlte
     },
     "autoload": {
         "psr-4": {

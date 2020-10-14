@@ -36,10 +36,14 @@ class RememberableTest extends TestCase
     {
         $this->model->update(['name' => 'Updated']);
 
+<<<<<<< HEAD
         $this->assertEquals(
             'Updated',
             Cache::get($this->model->getCacheKey())->name
         );
+=======
+        $this->assertEquals($rememberableModel, cache()->get('RememberableModel:'.$rememberableModel->id));
+>>>>>>> origin/adminlte
     }
 
     /** @test */
@@ -52,12 +56,16 @@ class RememberableTest extends TestCase
         );
     }
 
+<<<<<<< HEAD
     /** @test */
     public function gets_cached_model()
     {
         $this->assertTrue($this->model->is(
             RememberableModel::cacheGet($this->model->id)
         ));
+=======
+        $this->assertTrue(cache()->get('RememberableModel:'.$rememberableModel->id)->name === 'Updated');
+>>>>>>> origin/adminlte
     }
 
     /** @test */
@@ -71,7 +79,11 @@ class RememberableTest extends TestCase
             RememberableModel::cacheGet($this->model->id)
         ));
 
+<<<<<<< HEAD
         $this->assertFalse(Cache::has($this->model->getCacheKey()));
+=======
+        $this->assertFalse(cache()->has('RememberableModel:'.$rememberableModel->id));
+>>>>>>> origin/adminlte
     }
 
     private function createTestModel()
